@@ -69,12 +69,12 @@ void loop() {
         case 1:
             digitalWrite(MOTOR_FI_PIN, HIGH);
             digitalWrite(MOTOR_BI_PIN, LOW);
-            matrix.renderBitmap(forwardFrame, 8, 12);
+            matrix.renderBitmap(backwardFrame, 8, 12);
             break;
         case 2:
             digitalWrite(MOTOR_FI_PIN, LOW);
             digitalWrite(MOTOR_BI_PIN, HIGH);
-            matrix.renderBitmap(backwardFrame, 8, 12);
+            matrix.renderBitmap(forwardFrame, 8, 12);
             break;
     }
 }
